@@ -11,9 +11,7 @@ import tempfile
 from concurrent.futures import ProcessPoolExecutor
 from tqdm import tqdm
 
-# =================================================================
-# 1. USTAWIENIA CZASU I DOKŁADNOŚCI
-# =================================================================
+# USTAWIENIA DOKŁADNOŚCI
 SIM_STEPS = 250          
 BURN_IN_STEPS = 150      
 N_RUNS_PER_EVAL = 12    
@@ -21,14 +19,12 @@ DE_MAXITER = 30
 DE_POPSIZE = 10          
 WORKERS = 4    
 
-# --- KONFIGURACJA PLIKÓW ---
+# KONFIGURACJA PLIKÓW
 DATA_FILE = "Spot_area_and_number.csv"
 CONFIG_FILE = "config.json"
 TARGET_POPULATION = "Aripo1"
 
-# --- ZAKRESY POSZUKIWAŃ PARAMETRÓW (14 PARAMETRÓW) ---
-PARAM_BOUNDS = {
-# --- ZAKRESY POSZUKIWAŃ PARAMETRÓW (ZBALANSOWANE) ---
+# ZAKRESY POSZUKIWAŃ PARAMETRÓW
 PARAM_BOUNDS = {
     "reproduction_prob":          (0.25, 0.8),    # Podniesione minimum (musi być regeneracja populacji)
     "env_death_prob":             (0.005, 0.04),  # Zwężone (zbyt duża losowa śmierć niszczy model)
@@ -52,9 +48,7 @@ PARAM_BOUNDS = {
 
 pbar = None
 
-# =================================================================
-# 2. LOGIKA OBLICZENIOWA
-# =================================================================
+# LOGIKA OBLICZENIOWA
 
 def load_base_config():
     try:
@@ -82,7 +76,6 @@ def run_single_simulation(optimized_params_dict, seed=None):
         for i in range(SIM_STEPS):
             model.step()
             if i >= BURN_IN_STEPS:
-                # ZBIERAMY N_black (zgodnie z Twoją prośbą)
                 males_black = [a.N_black for a in model.agents if isinstance(a, Individual) and a.sex == "M"]
                 collected_data.extend(males_black)
             if not model.agents: break
@@ -131,14 +124,11 @@ def negative_log_likelihood(params_vec, param_names, real_data):
         
     return nll
 
-# =================================================================
-# 3. URUCHOMIENIE
-# =================================================================
+# URUCHOMIENIE
 
 if __name__ == "__main__":
     try:
         df = pd.read_csv(DATA_FILE)
-        # UWAGA: Zmieniono 'orange_N' na 'black_N'. Sprawdź czy tak nazywa się kolumna w CSV!
         real_data = df[df["pop"] == TARGET_POPULATION]["black_N"].values
         if len(real_data) == 0:
             raise ValueError(f"Brak danych dla populacji {TARGET_POPULATION} w kolumnie 'black_N'")

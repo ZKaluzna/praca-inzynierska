@@ -11,9 +11,7 @@ import tempfile
 from concurrent.futures import ProcessPoolExecutor
 from tqdm import tqdm
 
-# =================================================================
-# 1. USTAWIENIA CZASU I DOKŁADNOŚCI
-# =================================================================
+# USTAWIENIA DOKŁADNOŚCI
 SIM_STEPS = 250     
 BURN_IN_STEPS = 150      
 N_RUNS_PER_EVAL = 12   
@@ -21,22 +19,19 @@ DE_MAXITER = 30
 DE_POPSIZE = 10        
 WORKERS = 4    
 
-# --- KONFIGURACJA PLIKÓW ---
-DATA_FILE = "Spot_area_and_number.csv"  # Zaktualizowano nazwę pliku
+# KONFIGURACJA PLIKÓW
+DATA_FILE = "Spot_area_and_number.csv"
 CONFIG_FILE = "config.json"
 TARGET_POPULATION = "Aripo1"
 
-# --- ZAKRESY POSZUKIWAŃ PARAMETRÓW PREFERENCJI (10 PARAMETRÓW) ---
-# Ustawiono zakres (0.0, 1.0), co odpowiada wagom w funkcji score_males w model.py
+# ZAKRESY POSZUKIWAŃ PARAMETRÓW PREFERENCJI I SELEKCJI
 PARAM_BOUNDS = {
-    # Preferencje samic (5)
     "female_pref_orange":         (0.0, 1.0),
     "female_pref_black":          (0.0, 1.0),
     "female_pref_body_size":      (0.0, 1.0),
     "female_pref_N_orange":       (0.0, 1.0),
     "female_pref_N_black":        (0.0, 1.0),
     
-    # Preferencje drapieżników (5)
     "pred_pref_orange":           (0.0, 1.0),
     "pred_pref_black":            (0.0, 1.0),
     "pred_pref_body_size":        (0.0, 1.0),
@@ -46,9 +41,7 @@ PARAM_BOUNDS = {
 
 pbar = None
 
-# =================================================================
-# 2. LOGIKA OBLICZENIOWA (Pozostaje bez zmian strukturalnych)
-# =================================================================
+# LOGIKA OBLICZENIOWA
 
 def load_base_config():
     try:
@@ -127,9 +120,7 @@ def negative_log_likelihood(params_vec, param_names, real_data):
         
     return nll
 
-# =================================================================
-# 3. URUCHOMIENIE
-# =================================================================
+# URUCHOMIENIE
 
 if __name__ == "__main__":
     try:
