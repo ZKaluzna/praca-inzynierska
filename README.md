@@ -1,4 +1,4 @@
-# praca-inzynierska
+# Wieloagentowy model doboru płciowego u gupika (Poecilia reticulata) w środowiskach o niskiej i wysokiej presji drapieżniczej
 
 Celem tego projektu, realizowanego w ramach pracy inżynierskiej, było zbadanie wpływu ornamentacji samców, w szczególności liczby oraz powierzchni czarnych i pomarańczowych plam na ciele, na ich sukces reprodukcyjny w dwóch odmiennych scenariuszach środowiskowych - wysokiej oraz niskiejpresji drapieżniczej. Cel ten został zrealizowany poprzez skonstruowanie modelu wieloagentowego oraz jego parametryzację.
 
