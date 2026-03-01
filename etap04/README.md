@@ -6,7 +6,6 @@ optymalizacja parametrów preferencji i selekcji
 1. W pliku `parametryzacja2.py` ustaw `TARGET_POPULATION` (np. `Arima1`).
 2. Podmień treść pliku `config` na wartości z Etapu 02 (fizjologia/środowisko) dla wybranej populacji:
    * **Arima1:**
-   {
   "n_agents": 20,
   "width": 10,
   "height": 10,
@@ -40,10 +39,8 @@ optymalizacja parametrów preferencji i selekcji
   "pred_pref_body_size": 0.001,
   "pred_pref_N_orange": 0.001,
   "pred_pref_N_black": 0.001
-  }
-
+  
    * **Arima5:**
-   {
   "n_agents": 20,
   "width": 10,
   "height": 10,
@@ -77,10 +74,8 @@ optymalizacja parametrów preferencji i selekcji
   "pred_pref_body_size": 0.174405,
   "pred_pref_N_orange": 0.612798,
   "pred_pref_N_black": 0.490272
-  }
 
    * **Aripo1:**
-   {
   "n_agents": 20,
   "width": 10,
   "height": 10,
@@ -114,10 +109,8 @@ optymalizacja parametrów preferencji i selekcji
   "pred_pref_body_size": 0.227941,
   "pred_pref_N_orange": 0.621921,
   "pred_pref_N_black": 0.381606
-  }
 
    * **Aripo6:**
-   {
   "n_agents": 20,
   "width": 10,
   "height": 10,
@@ -151,7 +144,6 @@ optymalizacja parametrów preferencji i selekcji
   "pred_pref_body_size": 0.001,
   "pred_pref_N_orange": 0.001,
   "pred_pref_N_black": 0.001
-  }
 
 3. Uruchom proces:
    ```bash
