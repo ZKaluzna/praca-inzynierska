@@ -44,9 +44,12 @@ optymalizacja parametrów preferencji i selekcji
     "pred_pref_N_orange": 0.001,
     "pred_pref_N_black": 0.001
   }
+
+</details>
+
 <details>
-  
-   * **Arima5:**
+<summary>▶ Kliknij, aby zobaczyć parametry dla <b>Arima5</b></summary>
+ {
   "n_agents": 20,
   "width": 10,
   "height": 10,
@@ -80,8 +83,14 @@ optymalizacja parametrów preferencji i selekcji
   "pred_pref_body_size": 0.174405,
   "pred_pref_N_orange": 0.612798,
   "pred_pref_N_black": 0.490272
+}
 
-   * **Aripo1:**
+</details>
+
+<details>
+<summary>▶ Kliknij, aby zobaczyć parametry dla <b>Aripo1</b></summary>
+
+ {
   "n_agents": 20,
   "width": 10,
   "height": 10,
@@ -115,8 +124,12 @@ optymalizacja parametrów preferencji i selekcji
   "pred_pref_body_size": 0.227941,
   "pred_pref_N_orange": 0.621921,
   "pred_pref_N_black": 0.381606
+}
+</details>
 
-   * **Aripo6:**
+<details>
+<summary>▶ Kliknij, aby zobaczyć parametry dla <b>Aripo6</b></summary>
+{
   "n_agents": 20,
   "width": 10,
   "height": 10,
@@ -150,6 +163,8 @@ optymalizacja parametrów preferencji i selekcji
   "pred_pref_body_size": 0.001,
   "pred_pref_N_orange": 0.001,
   "pred_pref_N_black": 0.001
+}
+</details>
 
 3. Uruchom proces:
    ```bash
