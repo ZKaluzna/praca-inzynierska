@@ -5,40 +5,46 @@ optymalizacja parametrów preferencji i selekcji
 ### Instrukcja
 1. W pliku `parametryzacja2.py` ustaw `TARGET_POPULATION` (np. `Arima1`).
 2. Podmień treść pliku `config` na wartości z Etapu 02 (fizjologia/środowisko) dla wybranej populacji:
-   * **Arima1:**
-  "n_agents": 20,
-  "width": 10,
-  "height": 10,
-  "reproduction_prob": 0.278935,
-  "env_death_prob": 0.013652,
-  "max_age": 105.503065,
+<details>
+  <summary>▶ Kliknij, aby zobaczyć parametry dla <b>Arima1</b></summary>
 
-  "n_predators": 5,
-  "predator_hunt_threshold": 34.232825,
-  "predator_energy_decay": 2.543465,
-  "predator_energy_gain": 8.224903,
-  "predator_start_energy": 22.091489,
+  ```json
+  {
+    "n_agents": 20,
+    "width": 10,
+    "height": 10,
+    "reproduction_prob": 0.278935,
+    "env_death_prob": 0.013652,
+    "max_age": 105.503065,
 
-  "food_max": 25.101250,
-  "food_regen": 7.770476,
-  "food_eat": 8.976971,
-  "food_regen_empty_multiplier": 1.434243,
+    "n_predators": 5,
+    "predator_hunt_threshold": 34.232825,
+    "predator_energy_decay": 2.543465,
+    "predator_energy_gain": 8.224903,
+    "predator_start_energy": 22.091489,
 
-  "guppy_start_energy": 23.830070,
-  "guppy_energy_decay": 4.109367,
-  "guppy_energy_gain_per_food": 11.725148,
+    "food_max": 25.101250,
+    "food_regen": 7.770476,
+    "food_eat": 8.976971,
+    "food_regen_empty_multiplier": 1.434243,
 
-  "female_pref_orange": 0.2,
-  "female_pref_black": 0.2,
-  "female_pref_body_size": 0.2,
-  "female_pref_N_orange": 0.2,
-  "female_pref_N_black": 0.2,
+    "guppy_start_energy": 23.830070,
+    "guppy_energy_decay": 4.109367,
+    "guppy_energy_gain_per_food": 11.725148,
 
-  "pred_pref_orange": 0.001,
-  "pred_pref_black": 0.001,
-  "pred_pref_body_size": 0.001,
-  "pred_pref_N_orange": 0.001,
-  "pred_pref_N_black": 0.001
+    "female_pref_orange": 0.2,
+    "female_pref_black": 0.2,
+    "female_pref_body_size": 0.2,
+    "female_pref_N_orange": 0.2,
+    "female_pref_N_black": 0.2,
+
+    "pred_pref_orange": 0.001,
+    "pred_pref_black": 0.001,
+    "pred_pref_body_size": 0.001,
+    "pred_pref_N_orange": 0.001,
+    "pred_pref_N_black": 0.001
+  }
+<details>
   
    * **Arima5:**
   "n_agents": 20,
