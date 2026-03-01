@@ -1,10 +1,10 @@
 # Etap 04: Drugi etap parametryzacji
 
-optymalizacja parametrów preferencji i selekcji
+Optymalizacja parametrów preferencji i selekcji
 
 ### Instrukcja
 1. W pliku `parametryzacja2.py` ustaw `TARGET_POPULATION` (np. `Arima1`).
-2. Podmień treść pliku `config` na wartości z Etapu 02 (fizjologia/środowisko) dla wybranej populacji:
+2. Podmień treść pliku `config` na wartości z Etapu 02 dla wybranej populacji (własne lub poniższe):
 
 <details>
 <summary>▶ Kliknij, aby zobaczyć parametry dla Arima1</summary>

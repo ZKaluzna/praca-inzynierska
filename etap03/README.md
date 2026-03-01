@@ -1,12 +1,12 @@
 # Etap 03: Model z preferencjami i selekcją
 
-Wersja modelu wzbogacona o mechanizmy preferencji samic oraz presję ze strony drapieżników.
+W folderze tym udostępniono wersję modelu z dodanymi mechanizmami preferencji samic oraz presji ze strony drapieżników.
 
 ### Instrukcja uruchomienia
 1. Aby uruchomić aplikację, użyj komendy:
    `python -m solara run app.py`
 
-2. Aby odtworzyć wyniki dla konkretnej populacji, należy **podmienić treść pliku `config`** na wartości uzyskane w Etapie 02 lub skorzystać z poniższych:
+2. Aby odtworzyć wyniki dla konkretnej populacji, należy **podmienić treść pliku `config`** na wartości uzyskane samodzielnie na Etapie 02 lub skorzystać z poniższych:
 
 <details>
 <summary>▶ Kliknij, aby zobaczyć parametry dla Arima1</summary>

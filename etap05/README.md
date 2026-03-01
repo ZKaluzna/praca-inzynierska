@@ -1,4 +1,4 @@
-# Etap 05: Weryfikacja efektów (Model w pełni zoptymalizowany)
+# Etap 05: Wersja finalna modelu - weryfikacja rezultatów
 
 Finalna wersja symulacji z kompletem dobranych parametrów dla wszystkich badanych populacji.
 
