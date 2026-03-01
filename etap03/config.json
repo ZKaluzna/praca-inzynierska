@@ -1,0 +1,35 @@
+{
+  "n_agents": 20,
+  "width": 10,
+  "height": 10,
+  "reproduction_prob": 0.263043,
+  "env_death_prob": 0.032987,
+  "max_age": 133.841445,
+
+  "n_predators": 5,
+  "predator_hunt_threshold": 32.993876,
+  "predator_energy_decay": 2.434389,
+  "predator_energy_gain": 7.307257,
+  "predator_start_energy": 21.746978,
+
+  "food_max": 25.541248,
+  "food_regen": 9.547046,
+  "food_eat": 18.962450,
+  "food_regen_empty_multiplier": 1.619735,
+
+  "guppy_start_energy": 32.846349,
+  "guppy_energy_decay": 4.299069,
+  "guppy_energy_gain_per_food": 5.885438,
+
+  "female_pref_orange": 0.2,
+  "female_pref_black": 0.2,
+  "female_pref_body_size": 0.2,
+  "female_pref_N_orange": 0.2,
+  "female_pref_N_black": 0.2,
+
+  "pred_pref_orange": 0.001,
+  "pred_pref_black": 0.001,
+  "pred_pref_body_size": 0.001,
+  "pred_pref_N_orange": 0.001,
+  "pred_pref_N_black": 0.001
+}
